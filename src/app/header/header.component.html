@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-content" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Game Of Thrones</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-nav-content">
+      <form class="navbar-form" [formGroup]="filtersForm">
+
+        <div class="checkbox" *ngFor="let filter of filters">
+          <label>
+            <input 
+              type="checkbox"
+              [value]="filter.value"
+              [formControlName]="filter.value"
+              (click)="onFilterClick($event)"
+              (ngModelChange)="onFilterChange($event)">
+              <div></div>
+              <span>{{filter.name}}</span>
+          </label>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="error validation-error" [ngClass]="{'show':showErrMsg === true}">
+  <p>Atleast one filter should be selected!!!</p>
+</div>
+
