@@ -1,0 +1,17 @@
+.navbar-nav {
+    float: right;
+    font-weight: 700;
+}
+.navbar-nav>li:hover {
+    background: rgba(255,255,255,.3);
+}
+@media screen and (max-width:768px){
+    .navbar-nav>li>a {
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        float: none;
+    }
+}

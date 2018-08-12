@@ -12,12 +12,12 @@ main{
 
 
 .card.houses{
-    border: 2px solid violet;
+    border: 2px solid green;
 }
 
 
 .card.houses .btn {
-    background: violet;
+    background: green;
     border: none;
 }
 

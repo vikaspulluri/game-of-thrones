@@ -11,10 +11,10 @@ main{
 }
 
 .card.books{
-    border: 2px solid blue;
+    border: 2px solid red;
 }
 .card.books .btn {
-    background: blue;
+    background: red;
     border: none;
 }
 .card .card-header {

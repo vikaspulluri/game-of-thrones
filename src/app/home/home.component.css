@@ -11,26 +11,26 @@ main{
 }
 
 .card.books{
-    border: 2px solid blue;
+    border: 2px solid red;
 }
 .card.characters{
-    border: 2px solid yellowgreen;
+    border: 2px solid blue;
 }
 .card.houses{
-    border: 2px solid violet;
+    border: 2px solid green;
 }
 .card.books .btn {
-    background: blue;
+    background: red;
     border: none;
 }
 
 .card.houses .btn {
-    background: violet;
+    background: green;
     border: none;
 }
 
 .card.characters .btn {
-    background: yellowgreen;
+    background: blue;
     border: none;
 }
 .card .btn:hover{

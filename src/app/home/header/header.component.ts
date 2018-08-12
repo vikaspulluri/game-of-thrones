@@ -2,6 +2,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { FormValidators } from './form.validators';
+import { config } from '../../app.config';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +18,7 @@ export class HeaderComponent implements OnInit {
   showErrMsg:boolean = false;
   @Output() filterChanged = new EventEmitter<object>();
 
-
+  config = config;
   constructor(private formValidators:FormValidators) {
     
   }

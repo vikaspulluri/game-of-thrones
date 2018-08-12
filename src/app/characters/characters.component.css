@@ -10,10 +10,10 @@ main{
     transform: scale(1.05);
 }
 .card.characters{
-    border: 2px solid yellowgreen;
+    border: 2px solid blue;
 }
 .card.characters .btn {
-    background: yellowgreen;
+    background: blue;
     border: none;
 }
 .card .btn:hover{

@@ -77,3 +77,18 @@ nav form .checkbox label input{
     opacity: 1;
     height: auto;
 }
+
+@media screen and (max-width:768px){
+    form{
+        display:flex;
+        flex-direction:column;
+        border: none !important;
+    }
+    form>div.checkbox {
+        display:block;
+        text-align:left;
+        position:relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
