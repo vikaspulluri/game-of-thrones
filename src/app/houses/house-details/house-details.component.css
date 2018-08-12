@@ -1,0 +1,26 @@
+table th{
+    text-align: center;
+}
+
+.table, table tr, table thead tr, table tbody tr:nth-child(1){
+    border-bottom: 2px solid;
+}
+h2{
+    text-align: center;
+    color: #fff;
+    font-family: 'Headland One', serif;
+}
+
+td li {
+    text-align: left;
+    list-style: none;
+}
+
+td {
+    width: 50%;
+    max-width: 50%;
+    text-align: left;
+}
+.table>tbody>tr>td:first-child {
+    padding-left: 50px;
+}

@@ -1,0 +1,45 @@
+main{
+    color: #fff;
+}
+.card {
+    border-radius: 5px;
+    margin: .5em;
+    padding: 1em;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.card.houses{
+    border: 2px solid violet;
+}
+
+
+.card.houses .btn {
+    background: violet;
+    border: none;
+}
+
+
+.card .btn:hover{
+    color: #000;
+}
+
+.card .card-header {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,.1);
+}
+
+.card .card-header h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.card .card-body {
+    padding: 10px 2px;
+    text-align: center;
+}

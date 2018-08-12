@@ -55,4 +55,11 @@ export class AppHttpService{
         }
         return Observable.forkJoin(observableBatch);
     }
+
+    getDetails(type:string,id?:number){
+        let hostUrl = id ? `${config.hostUrl}/${type}/${id}` : `${config.hostUrl}/${type}`;
+        return this.http
+            .get(hostUrl)
+            .pipe(map((res:Response) => res.json()))
+    }
 }

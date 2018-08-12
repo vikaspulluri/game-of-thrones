@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Character Details - {{ characterDetails?.name }}</h2>
+    <div class="row">
+      <table class="table">
+        <tbody class="text-center">
+          
+          <tr class="success" *ngFor="let character of characterDetails | mapToIterable">
+            <td><strong>{{ character?.key }}</strong></td>
+            <td>
+              <span *ngIf="isArray(character?.val)">
+                <li *ngFor="let item of character.val">
+                    {{ item }}
+                </li>
+              </span>
+              <span *ngIf="!isArray(character?.val)">
+                {{ character?.val }}
+              </span>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>  
+  </div>
+      

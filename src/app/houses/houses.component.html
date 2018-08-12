@@ -1,0 +1,23 @@
+<app-menu-bar></app-menu-bar>
+<router-outlet></router-outlet>
+
+<main class="container" *ngIf="route.children.length === 0">
+    <div class="row">
+        <div class="col-md-6 col-lg-4" *ngFor="let item of (houses | orderby: 'name')">
+        <div class="card bg-light border-info mb-3 houses">
+            <div class="card-header">
+            <h5>{{item.name}}</h5>
+            </div>
+            <div class="card-body">
+            <p>
+                <strong>Type : </strong> {{ item._type }}
+            </p>
+            <p>
+                <a class="btn btn-primary" routerLink="/{{ item._detailsLink}}">Details</a>
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+

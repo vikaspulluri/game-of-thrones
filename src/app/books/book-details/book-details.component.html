@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Book Details - {{ bookDetails?.name }}</h2>
+    <div class="row">
+      <table class="table">
+        <tbody class="text-center">
+          
+          <tr class="success" *ngFor="let book of bookDetails | mapToIterable">
+            <td><strong>{{ book?.key }}</strong></td>
+            <td>
+              <span *ngIf="isArray(book?.val)">
+                <li *ngFor="let item of book.val">
+                    {{ item }}
+                </li>
+              </span>
+              <span *ngIf="!isArray(book?.val)">
+                {{ book?.val }}
+              </span>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>  
+  </div>
+      
