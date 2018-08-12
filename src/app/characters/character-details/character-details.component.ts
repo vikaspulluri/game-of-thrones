@@ -18,7 +18,6 @@ export class CharacterDetailsComponent implements OnInit {
           .getDetails('characters',this.route.snapshot.params.id)
           .subscribe((data) => {
             this.characterDetails = data;
-            console.log(this.characterDetails);
           },
             (error) => console.log(error)
           )

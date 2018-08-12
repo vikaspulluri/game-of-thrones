@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Response } from '@angular/http';
 import { AppHttpService } from '../../app-http.service';
 
 @Component({
@@ -17,9 +18,8 @@ export class BookDetailsComponent implements OnInit {
           .getDetails('books',this.route.snapshot.params.id)
           .subscribe((data) => {
             this.bookDetails = data;
-            console.log(data);
           },
-            (error) => console.log(error)
+            (error:Response) => console.log(error)
           )
     }
   }

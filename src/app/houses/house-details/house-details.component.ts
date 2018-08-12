@@ -16,7 +16,6 @@ export class HouseDetailsComponent implements OnInit {
           .getDetails('houses',this.route.snapshot.params.id)
           .subscribe((data) => {
             this.houseDetails = data;
-            console.log(data);
           },
             (error) => console.log(error)
           )
