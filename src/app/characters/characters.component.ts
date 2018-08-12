@@ -10,7 +10,7 @@ import { AppHelpers } from '../app-helpers.service';
 })
 export class CharactersComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,private xhrService:AppHttpService,private router: Router,private helperService:AppHelpers) { }
+  constructor(public route: ActivatedRoute,private xhrService:AppHttpService,private router: Router,private helperService:AppHelpers) { }
   characters;
   ngOnInit() {
     this.xhrService

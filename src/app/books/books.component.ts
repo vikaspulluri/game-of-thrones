@@ -9,7 +9,7 @@ import { AppHelpers } from '../app-helpers.service';
 })
 export class BooksComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,private xhrService:AppHttpService,private router: Router,private helperService:AppHelpers) { }
+  constructor(public route: ActivatedRoute,private xhrService:AppHttpService,private router: Router,private helperService:AppHelpers) { }
   books;
   ngOnInit() {
     this.xhrService
